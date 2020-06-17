@@ -1,0 +1,89 @@
+$body-bg: #333;
+$font-color:#fff;
+$primary-color: #008ed6;
+$dark-color: #000;
+$icon-font-size: 30px;
+$border-radius-min: 5px;
+
+body{
+    background-color: $body-bg;
+    color: $font-color;
+    overflow-x: hidden;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar-toggler-icon{
+    color: #fff;
+}
+
+.navbar{
+    background: #292b2c;
+    opacity: .8;
+    border-bottom: 3px solid $primary-color;
+}
+.icon, .create-icon{
+    background: #fff;
+    color: $primary-color;
+    font-weight: bold;
+    padding: 4px;
+    font-size: $icon-font-size;
+    border-radius: $border-radius-min;
+}
+#home-section{
+    background-image: url(../img/home.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    .dark-overlay{
+        background: rgba(0, 0, 0, .8);
+    }
+}
+.form-card{
+    opacity: .8;
+}
+
+/* explore section */
+.explore-icon, .share-icon{
+    background: $dark-color;
+    color: #fff;
+    font-weight: bold;
+    padding: 4px;
+    font-size: $icon-font-size;
+    border-radius: $border-radius-min;
+}
+/* fixed icon */
+#fixed{
+    top: 250px;
+    right: 0;
+    position: absolute;
+}
+#fixed .fixed-i .fa{
+    font-size: 22px;
+    transition: .5s;
+    color: #fff;
+}
+#fixed .fixed-i a:hover .fa{
+    color: $primary-color;
+}
+
+@media(max-width: 768px){
+    #home-section h1{
+        font-size: 2.2rem;
+    }
+    body .lead{
+        font-size: 16px;
+    }
+    body .display-4{
+        font-size: 34px;
+    }
+    #fixed{
+        top: 100%;
+        position: absolute;
+    }
+    #fixed .fixed-i .fa{
+        font-size: 16px;
+    }
+}
+
